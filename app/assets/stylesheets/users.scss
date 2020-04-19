@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
 .profile .avatar{
   .wrapper{
     width: 140px;
@@ -59,5 +58,50 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
+  }
+}
+
+.user-tabs{
+  border-top: 1px solid #efefef;
+  display: flex;
+  justify-content: center;
+
+  a.tab{
+    height: 35px;
+    margin-right: 50px;
+    line-height: 45px;
+    color: #999;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    i{
+      padding-right: 1px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  a.active{
+    border-top: 1px solid #262626;
+    color: #262626;
+  }
+}
+
+.user-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 20px;
+
+  .wrapper{
+    width: 280px;
+    height: 280px;
+    margin: 15px;
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 4%;
+    }
   }
 }
